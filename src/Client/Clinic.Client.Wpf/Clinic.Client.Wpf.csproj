@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net10.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Clinic.Client.Application\Clinic.Client.Application.csproj" />
+        <ProjectReference Include="..\Clinic.Client.Domain\Clinic.Client.Domain.csproj" />
+        <ProjectReference Include="..\Clinic.Client.Infrastructure\Clinic.Client.Infrastructure.csproj" />
+        <ProjectReference Include="..\Clinic.Client.Sync\Clinic.Client.Sync.csproj" />
+        <ProjectReference Include="..\..\Contracts\Clinic.Contracts\Clinic.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

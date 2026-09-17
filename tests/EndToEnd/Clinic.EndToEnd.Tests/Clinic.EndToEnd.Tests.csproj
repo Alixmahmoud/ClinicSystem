@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\src\Client\Clinic.Client.Wpf\Clinic.Client.Wpf.csproj" />
+        <ProjectReference Include="..\..\..\src\Client\Clinic.Client.Application\Clinic.Client.Application.csproj" />
+        <ProjectReference Include="..\..\..\src\Client\Clinic.Client.Domain\Clinic.Client.Domain.csproj" />
+        <ProjectReference Include="..\..\..\src\Client\Clinic.Client.Infrastructure\Clinic.Client.Infrastructure.csproj" />
+        <ProjectReference Include="..\..\..\src\Client\Clinic.Client.Sync\Clinic.Client.Sync.csproj" />
+        <ProjectReference Include="..\..\..\src\Authority\Clinic.Authority.Api\Clinic.Authority.Api.csproj" />
+        <ProjectReference Include="..\..\..\src\Authority\Clinic.Authority.Application\Clinic.Authority.Application.csproj" />
+        <ProjectReference Include="..\..\..\src\Authority\Clinic.Authority.Domain\Clinic.Authority.Domain.csproj" />
+        <ProjectReference Include="..\..\..\src\Authority\Clinic.Authority.Infrastructure\Clinic.Authority.Infrastructure.csproj" />
+        <ProjectReference Include="..\..\..\src\Authority\Clinic.Authority.Worker\Clinic.Authority.Worker.csproj" />
+        <ProjectReference Include="..\..\..\src\Contracts\Clinic.Contracts\Clinic.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

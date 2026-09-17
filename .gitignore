@@ -1,0 +1,31 @@
+## .NET build artifacts
+**/bin/
+**/obj/
+**/artifacts/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio cache/options
+.vs/
+.vscode/
+
+## Rider / JetBrains
+.idea/*.log
+.idea/*.sock
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+## Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+## Logs
+*.log
+logs/

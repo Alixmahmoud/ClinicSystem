@@ -1,0 +1,9 @@
+<Project>
+
+    <!--
+        Repository-wide MSBuild targets, imported after each project's own content.
+        Kept empty for the structure bootstrap; add shared targets here when justified
+        by a specific implementation requirement.
+    -->
+
+</Project>

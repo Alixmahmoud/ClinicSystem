@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\src\Authority\Clinic.Authority.Infrastructure\Clinic.Authority.Infrastructure.csproj" />
+        <ProjectReference Include="..\..\..\src\Authority\Clinic.Authority.Application\Clinic.Authority.Application.csproj" />
+        <ProjectReference Include="..\..\..\src\Authority\Clinic.Authority.Domain\Clinic.Authority.Domain.csproj" />
+    </ItemGroup>
+
+</Project>

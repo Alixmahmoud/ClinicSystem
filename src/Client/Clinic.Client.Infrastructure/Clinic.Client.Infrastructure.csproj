@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Clinic.Client.Domain\Clinic.Client.Domain.csproj" />
+        <ProjectReference Include="..\Clinic.Client.Sync\Clinic.Client.Sync.csproj" />
+        <ProjectReference Include="..\..\Contracts\Clinic.Contracts\Clinic.Contracts.csproj" />
+    </ItemGroup>
+
+</Project>

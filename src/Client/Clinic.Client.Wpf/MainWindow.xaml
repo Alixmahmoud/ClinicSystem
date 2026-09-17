@@ -1,0 +1,64 @@
+﻿<Window x:Class="Clinic.Client.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clinic.Client.Wpf"
+        mc:Ignorable="d"
+        Title="Clinic Workstation — Front Desk"
+        Height="520" Width="900">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0" Margin="0,0,0,8">
+            <TextBlock Text="Appointments" FontSize="18" FontWeight="SemiBold" DockPanel.Dock="Left" />
+            <TextBlock Text="{Binding IdentityText}" Foreground="Gray" HorizontalAlignment="Right" />
+        </DockPanel>
+
+        <ListBox Grid.Row="1"
+                 ItemsSource="{Binding Appointments}"
+                 SelectedItem="{Binding SelectedAppointment}"
+                 HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="{Binding HeaderText}" FontWeight="SemiBold" />
+                            <TextBlock Text="{Binding DetailText}" Foreground="Gray" />
+                        </StackPanel>
+                        <TextBlock Grid.Column="1"
+                                   Text="{Binding SyncBadge}"
+                                   VerticalAlignment="Center"
+                                   Foreground="DarkOrange" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <DockPanel Grid.Row="2" Margin="0,8,0,0">
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Left">
+                <Button Content="Check In Selected"
+                        Command="{Binding CheckInCommand}"
+                        Padding="12,4" MinWidth="140" />
+                <Button Content="Refresh"
+                        Command="{Binding RefreshCommand}"
+                        Padding="12,4" Margin="8,0,0,0" MinWidth="90" />
+                <Button Content="Sync Now"
+                        Command="{Binding SyncNowCommand}"
+                        Padding="12,4" Margin="8,0,0,0" MinWidth="90" />
+            </StackPanel>
+            <TextBlock Text="{Binding StatusMessage}"
+                       VerticalAlignment="Center"
+                       TextTrimming="CharacterEllipsis"
+                       HorizontalAlignment="Right" />
+        </DockPanel>
+    </Grid>
+</Window>
