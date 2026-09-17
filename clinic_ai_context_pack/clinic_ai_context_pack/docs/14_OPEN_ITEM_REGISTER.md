@@ -2,6 +2,26 @@
 
 These items are explicitly unresolved or implementation-specific. They are not gaps to guess.
 
+## Resolved During the First Vertical Slice (IMPLEMENTATION DETAIL)
+Resolved at the implementation boundary, consistent with frozen semantics; these
+resolutions are recorded for traceability and are NOT frozen specification changes.
+
+- exact API routes for submit/recovery: `POST /api/operations/submit`,
+  `GET /api/operations/{workstationId:guid}/{operationId:guid}`.
+- transport/status mapping: HTTP 200 body `OperationResult` with a business `Outcome`
+  for all 6 semantic outcomes; HTTP 401/403/422/400/502/503 map to the 5 failure
+  categories; recovery GET 200 (result) or 404 (definitive "no record", safe re-submit
+  of the same OperationId); other 5xx/network/timeout → UnknownOutcome.
+- wire serialization: JSON (`System.Net.Http.Json`), envelope ProtocolVersion "1.0".
+- seed/bootstrap mechanism: `Clinic.Contracts.Development.DevelopmentSeed` (single
+  source), re-exported via `AuthoritySeedConstants`; used by both workstation and
+  authority seeders (not a CreateAppointment bypass).
+- package/build conventions: central package management, EF packages 10.0.4 family,
+  Npgsql provider 10.0.3, SQLitePCLRaw.bundle_e_sqlite3 2.1.13;
+  repo-local `dotnet-ef` tool manifest at repo root.
+- identity/auth placeholder mechanism: fixed seeded reception user/workstation carried
+  in the operation envelope; real session/token mechanism remains open.
+
 ## Security
 - exact role-permission matrix where not frozen
 - password/session/lockout values

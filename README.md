@@ -12,8 +12,12 @@ is preserved at `clinic_ai_context_pack/`. Start with
 
 ## Current Status
 
-The project is implementation-ready at the repository/solution level. The next task is the
-**First Vertical Slice** (selection and implementation are separate, governed tasks).
+The **First Vertical Slice** (`CheckInAppointment`) is **COMPLETE**: implemented, tested
+(53/53 tests across 10 projects), checkpointed, and pushed to GitHub. The project is now
+in **Incremental Workflow Implementation**; the next bounded slice is not yet selected
+(selection is a separate, source-backed, governed task). See
+`clinic_ai_context_pack/clinic_ai_context_pack/docs/20_IMPLEMENTATION_STATE.md` for the
+current implementation record.
 
 Frozen runtime path:
 

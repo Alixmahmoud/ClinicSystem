@@ -24,3 +24,4 @@
 - `17_SOURCE_AUTHORITY_AND_GAPS.md`
 - `18_COMMAND_CATALOG.md`
 - `19_FAILURE_AND_OUTCOME_MATRIX.md`
+- `20_IMPLEMENTATION_STATE.md` (current implementation-state pointer)

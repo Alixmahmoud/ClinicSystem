@@ -40,7 +40,8 @@ Current handoff is the current-state pointer. Older handoffs and old chat are tr
 | Security | substantial/frozen baseline | Yes for detailed 18-part specification |
 | Deployment | substantial/frozen baseline | Yes for detailed deployment procedures |
 | Repository | implementation-ready structure | Current handoff is sufficient for the summarized structure |
-| First Vertical Slice | boundary and completion gate | Workflow-specific source material is still required for selection |
+| First Vertical Slice | COMPLETE — implemented, tested, checkpointed, pushed | Execution record: `20_IMPLEMENTATION_STATE.md`; boundary: `13_FIRST_VERTICAL_SLICE.md` |
+| Implementation State | COMPLETE for First Vertical Slice | Current implementation-state pointer: `20_IMPLEMENTATION_STATE.md` |
 
 ## Agent Rule
 Never compensate for a missing detailed authoritative source by inventing requirements.

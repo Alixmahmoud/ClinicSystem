@@ -22,7 +22,13 @@ When a contradiction is found:
 
 ## 2. Project Status
 
-The project is implementation-ready at the repository/solution level. The next task is the First Vertical Slice.
+The First Vertical Slice (`CheckInAppointment`) is COMPLETE: implemented, tested,
+verified, checkpointed (git `325c410`, current `main`/`origin/main` `e8544d0`), and
+pushed to GitHub. See `docs/20_IMPLEMENTATION_STATE.md` for the implementation record.
+
+The project is now in INCREMENTAL WORKFLOW IMPLEMENTATION. The next task is the
+SOURCE-BACKED SELECTION AND PLANNING OF THE NEXT BOUNDED VERTICAL SLICE as a separate
+governed task. Do not implement or select the next slice from convenience.
 
 Do not restart Discovery, Requirements, Product Definition, UX, Architecture, Data, API/Contract, Synchronization, Security, Deployment, or Repository/Solution Structure unless a genuine source-backed contradiction or missing requirement requires phase-gate review.
 

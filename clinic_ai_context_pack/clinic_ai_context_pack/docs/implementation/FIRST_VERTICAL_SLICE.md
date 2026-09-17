@@ -1,7 +1,12 @@
 # First Vertical Slice — Implementation Boundary
 
 ## Status
-NEXT / PRACTICAL IMPLEMENTATION START.
+COMPLETE / IMPLEMENTED + TESTED + CHECKPOINTED + PUSHED.
+
+This boundary document preserves the original plan. The actual execution record
+(scope, decisions, tests, deviations, git reference) is in
+`../20_IMPLEMENTATION_STATE.md`; a completion summary is also in
+`../13_FIRST_VERTICAL_SLICE.md`.
 
 ## Purpose
 The First Vertical Slice is not another architecture phase. It is the first practical implementation milestone whose purpose is to prove that the already-specified system works as one coherent path.

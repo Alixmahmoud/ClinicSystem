@@ -2,7 +2,8 @@
 
 Before starting a new task, confirm all of the following:
 
-- Current phase pointer is **First Vertical Slice**, not Security Part 11, API Part 2, or Synchronization.
+- Current phase pointer is **Incremental Workflow Implementation**, after the completed **First Vertical Slice** (implemented, tested, checkpointed, pushed — `docs/20_IMPLEMENTATION_STATE.md`).
+- The next bounded vertical slice is **not selected**; selection is a separate, governed, source-backed task.
 - Security is 18/18 complete and frozen; Part 17 audit PASS; Part 18 final freeze complete.
 - Deployment is complete/frozen.
 - Repository / Solution Structure is complete/implementation-ready.
